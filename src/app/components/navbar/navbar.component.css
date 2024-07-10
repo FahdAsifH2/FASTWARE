@@ -1,0 +1,51 @@
+.navbar {
+  background-color: #3498db;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px; /* Adjusted height to make it narrower */
+  padding: 0 10px;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand span:first-child {
+  font-size: 3.5rem; /* Increased font size for "FAST" */
+  font-weight: bold;
+  margin-right: 8px; /* Adjusted spacing between "FAST" and "WARE" */
+  letter-spacing: -1px; /* Adjusted letter spacing for better visual impact */
+}
+
+.navbar-brand span:last-child {
+  font-size: 2rem;
+}
+
+.nav-links {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px; /* Reduced padding for links */
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  background-color: #2980b9;
+}
+
+.nav-links a.active {
+  background-color: #4CAF50;
+}
