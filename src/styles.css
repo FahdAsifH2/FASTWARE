@@ -1,1 +1,126 @@
-/* You can add global styles to this file, and also import other style files */
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Set a consistent background color for all components */
+body, .app-root {
+    background-color: #222; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+    font-family: 'Arial', sans-serif; /* Default font family */
+}
+
+/* Example of setting a base font size and line height */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Global link styles */
+a {
+    color: #3498db; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container for content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header styles */
+.landing-header {
+    background-color: #333; /* Darker background for header */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.landing-header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.landing-nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.landing-nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.landing-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero section styles */
+.landing-hero {
+    background-color: #007bff; /* Blue background for hero */
+    color: #fff; /* White text */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.landing-hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.landing-hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.landing-hero .btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff; /* Button color contrasting with dark background */
+    text-decoration: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.landing-hero .btn:hover {
+    background-color: #e6e6e6;
+}
+
+/* Features section styles */
+.landing-features {
+    background-color: #333; /* Dark background for features */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.landing-features h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.landing-feature {
+    margin-bottom: 30px;
+}
+
+.landing-feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.landing-feature p {
+    font-size: 16px;
+}
+

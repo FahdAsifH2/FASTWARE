@@ -1,0 +1,128 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.software-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.software-item {
+    width: 300px;
+    background-color: #0c0701;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center; /* Center align text */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+}
+
+.software-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.software-item img {
+    width: 150px; /* Adjust image width as needed */
+    margin-bottom: 10px; /* Add spacing below the image */
+}
+
+.download-link,
+.video-link {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    color: #3498db;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.download-link:hover,
+.video-link:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.feedback-form {
+    margin: 0 auto; /* Center align the form horizontally */
+    text-align: center; /* Center align content inside the form */
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea {
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    padding: 9px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    font-size: 1rem;
+}
+
+.feedback-form textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+.feedback-form button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedback-form button:hover {
+    background-color: #2980b9;
+}
+
+.feedback-form input[type="text"] {
+    width: calc(100% - 40px); /* Adjust width to account for padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    font-size: 1rem;
+}

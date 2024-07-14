@@ -13,11 +13,13 @@ export class HomeComponent {
 constructor(private router:Router){}
 navigate(destination: string)
 {
-  debugger
+  
   // Example: Navigate to different routes based on button clicked
   switch(destination)
    {
-    
+    case'main':
+    this.router.navigateByUrl('/');
+    break;
     case 'pf':
       // Navigate to a specific route (replace 'pfoopdsa' with your actual route path)
       this.router.navigateByUrl('/pf');
@@ -38,6 +40,9 @@ navigate(destination: string)
       // Navigate or perform some action
       this.router.navigateByUrl('/operatingsystems');
       break;
+      case 'cn':
+        this.router.navigateByUrl('/cn');
+        break;
     default:
       // Handle unexpected cases
       break;
