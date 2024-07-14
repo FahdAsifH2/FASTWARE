@@ -1,6 +1,11 @@
+
+
 [build]
-  publish = "dist/fastware"
+  publish = "dist/fastware/browser"
   command = "ng build --prod"
+
+[[plugins]]
+  package = "@netlify/angular-runtime"
 
 [[redirects]]
   from = "/*"
