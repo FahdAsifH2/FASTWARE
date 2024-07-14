@@ -1,8 +1,6 @@
-
-
 [build]
   publish = "dist/fastware/browser"
-  command = "ng build --prod"
+  command = "ng build --configuration=production"
 
 [[plugins]]
   package = "@netlify/angular-runtime"
