@@ -1,12 +1,24 @@
-<nav class="navbar">
-    <div class="navbar-brand">
-      <span style="font-size: 2.5rem; font-weight: bold;">FAST</span><span style="font-size: 3rem; font-weight: bold;">WARE</span>
-    </div>
-    <div class="nav-links">
-      <a (click)="navigateToHome()">Home</a>
-      <a (click)="navigateToAbout()">About</a>
-    
-      <!-- Add more links as needed -->
-    </div>
-  </nav>
+<!-- <mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
   
+  </button>
+  <span class="example-spacer"></span>
+  <span style="font-size: 2.5rem; font-weight: bold;">FAST<span style="font-size: 3rem; font-weight: bold;">WARE</span></span>
+  <span class="example-spacer"></span>
+  <div class="nav-links">
+    <a (click)="navigateToHome()">Home</a>
+    <a (click)="navigateToAbout()">About</a>
+  </div>
+</mat-toolbar> -->
+
+
+<mat-toolbar color="primary">
+  <span style="font-size: 1.5rem; font-weight: bold;">FAST<span style="font-size: 1.5rem; font-weight: bold;">WARE</span></span>
+  <span class="example-spacer"></span>
+  <mat-toolbar color="primary">
+    <button mat-raised-button class="toolbar-button" (click)="navigateToHome()">Home</button>
+    <button mat-raised-button class="toolbar-button" (click)="navigateToAbout()">About</button>
+    <button mat-raised-button class="toolbar-button" (click)="navigateToHome()">ADMIN</button>
+  </mat-toolbar>
+  
+</mat-toolbar>

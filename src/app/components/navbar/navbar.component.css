@@ -1,51 +1,23 @@
-.navbar {
-  background-color: #3498db;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 10;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 38px; /* Adjusted height to make it narrower */
-  padding: 0 10px;
+::ng-deep .mat-toolbar.mat-primary {
+  background-color: #1e4c6b;
 }
 
-.navbar-brand {
+.toolbar-button {
+  margin-right: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+  filter: blur(2px);
+  background-color: #489adc;
   color: white;
-  font-size: 2.5rem;
-  display: flex;
-  align-items: center;
+  border-radius: 4px;
 }
 
-.navbar-brand span:first-child {
-  font-size: 3.5rem; /* Increased font size for "FAST" */
-  font-weight: bold;
-  margin-right: 8px; /* Adjusted spacing between "FAST" and "WARE" */
-  letter-spacing: -1px; /* Adjusted letter spacing for better visual impact */
+.toolbar-button:hover {
+  background-color: #1e88e5;
+  transform: scale(1.05);
+  filter: blur(0px);
 }
 
-.navbar-brand span:last-child {
-  font-size: 2rem;
-}
-
-.nav-links {
-  margin-left: 20px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 12px; /* Reduced padding for links */
-  font-size: 1rem;
-}
-
-.nav-links a:hover {
-  background-color: #2980b9;
-}
-
-.nav-links a.active {
-  background-color: #4CAF50;
+.toolbar-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
